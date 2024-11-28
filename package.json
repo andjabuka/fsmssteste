@@ -2,6 +2,7 @@
   "name": "blog",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://andjabuka.github.io/fsmssteste",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.0",
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
@@ -20,8 +21,7 @@
     "react-quill": "^2.0.0",
     "react-router-dom": "^6.26.1",
     "react-scripts": "^5.0.1",
-    "web-vitals": "^2.1.4",
-    "homepage": "https://andjabuka.github.io/fsmssteste"
+    "web-vitals": "^2.1.4"
 
   },
   "scripts": {
