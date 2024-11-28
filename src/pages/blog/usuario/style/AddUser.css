@@ -1,0 +1,61 @@
+/* General styles for the add page */
+.add-user-container {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for better contrast */
+  }
+  
+  .form-container {
+    max-width: 800px;
+    margin: 0 auto; /* Center the form */
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333; /* Darker color for the title */
+  }
+  
+  .add-user-form .form-group {
+    margin-bottom: 20px; /* Spacing between form groups */
+  }
+  
+  .form-control {
+    width: 100%; /* Full width for inputs */
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .required {
+    color: red; /* Highlight required fields */
+  }
+  
+  /* Styles for the Quill editor */
+  .editor .ql-container {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  

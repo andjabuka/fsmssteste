@@ -1,0 +1,82 @@
+
+.edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100vw;
+    height: 100vh;   
+    margin: auto;
+    background-image: linear-gradient(to bottom, #ffcc99, #ffffff);
+    
+}
+
+.mb-3 {
+    top: 50px;
+    position: fixed;
+    
+    
+    
+}
+
+.button-green {
+    background-color: #006400;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px; /* Espaço entre os botões */
+    cursor: pointer;
+}
+
+.button-green:last-child {
+    margin-right: 0; /* Remove margem do último botão */
+}
+
+
+.container2 {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+
+}
+
+
+.form-group {
+    margin-bottom: 1.5rem; /* Espaçamento entre os campos */
+    
+}
+
+.label {
+    font-weight: bold;
+    margin-bottom: 0.5rem; /* Espaçamento abaixo do rótulo */
+    
+}
+
+.required {
+    color: red; /* Cor para o asterisco de campo obrigatório */
+}
+
+.mb-3 .btn-primary-add {
+    background-color: #006400; /* Cor do botão */
+    color: white; /* Texto branco */
+}
+
+.mb-3 .btn-primary:hover {
+    background-color: #006400; /* Cor ao passar o mouse */
+}
+
+.form-control {
+    border: 1px solid #006400; /* Borda leve */
+    border-radius: 0.25rem; /* Bordas arredondadas */
+}
+
+.form-control:focus {
+    border-color: #006400; /* Cor da borda ao focar */
+    box-shadow: 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra ao focar */
+}
+
+.form-control-sm {
+    font-size: 0.875rem; /* Tamanho da fonte menor */
+    padding: 0.25rem 0.5rem; /* Preenchimento menor */
+}

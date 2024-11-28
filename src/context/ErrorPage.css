@@ -1,0 +1,18 @@
+.error-page {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.error-page h1 {
+    color: rgb(7, 7, 7);
+    font-size: 190px;
+}
+.error-page h2{
+    color: rgb(7, 7, 7);
+    font-size: 90px;
+}
+
+.error-page h3 {
+    color: rgb(7, 7, 7);
+    font-size: 30px;
+}

@@ -1,0 +1,45 @@
+body {
+    margin: 0; /* Remove margens padrão do corpo */
+    padding: 0; /* Remove preenchimento padrão do corpo */
+    box-sizing: border-box; /* Faz com que o padding e as bordas sejam incluídos no tamanho total dos elementos */
+}
+
+.edit-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Adiciona um pouco de preenchimento */
+}
+
+.card-container {
+    display: grid; /* Muda para grid layout */
+    grid-template-columns: repeat(4, 1fr); /* Define 4 colunas de largura igual */
+    gap: 20px; /* Espaço entre os cards */
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px; /* Margem para espaço externo */
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+}
+
+.card-name {
+    margin: 10px 0 5px 0;
+    font-size: 18px;
+}
+
+.card-biography {
+    font-size: 14px;
+    color: #666;
+}

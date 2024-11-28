@@ -1,0 +1,92 @@
+/* Estilo geral do card */
+.post-card {
+    max-width: 600px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  /* Imagem de capa */
+  .post-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Conteúdo do post */
+  .post-content {
+    padding: 20px;
+  }
+  
+  /* Header do post */
+  .post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .author-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .author-name {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .post-info {
+    display: block;
+    color: #888;
+    font-size: 0.9em;
+  }
+  
+  /* Título do post */
+  .post-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  /* Descrição do post */
+  .post-description {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  /* Rodapé do post */
+  .post-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9em;
+    color: #777;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+  }
+  
+  .like-button {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+
+  /* PostList.css */
+.post-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  

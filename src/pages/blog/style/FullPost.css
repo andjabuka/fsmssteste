@@ -1,0 +1,65 @@
+
+
+/* Estilos gerais para o FullPost */
+.FullPost {
+    max-width: 1100px; /* Define a largura máxima do card */
+    margin: 20px auto; /* Adiciona margem superior e inferior e centraliza o card horizontalmente */
+    padding: 20px; /* Adiciona padding interno ao card */
+    border: 1px solid #ddd; /* Adiciona uma borda leve ao redor do card */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    background-color: #fff; /* Define a cor de fundo do card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve ao card */
+}
+
+.FullPost__title {
+    font-weight: bold;
+    font-size: 2em; /* Ajuste o tamanho da fonte conforme necessário */
+    margin-bottom: 20px; /* Margem abaixo do título */
+    text-align: center; /* Centraliza o título */
+}
+
+.FullPost__image {
+    display: block; /* Faz com que a imagem e a fonte da imagem se comportem como um bloco centralizado */
+    text-align: center; /* Centraliza o conteúdo dentro do bloco */
+    margin: 0 auto; /* Centraliza o bloco da imagem horizontalmente */
+}
+
+.fullpost-image {
+    max-width: 100%; /* Faz com que a imagem não ultrapasse a largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.FullPost__image-source {
+    font-size: 0.875rem; /* Ajuste o tamanho da fonte conforme necessário */
+    color: #555; /* Escolha uma cor que contraste com o fundo */
+    margin-top: 0.5rem; /* Espaçamento acima do texto da fonte */
+    font-style: italic;
+    text-align: center; /* Centraliza o texto da fonte da imagem */
+    display: block; /* Garante que o texto da fonte da imagem esteja em linha separada da imagem */
+}
+
+.FullPost__details {
+    font-size: 0.9em; /* Ajusta o tamanho da fonte para a data de criação */
+    color: #666; /* Adiciona uma cor cinza à data de criação */
+    margin-top: 20px; /* Margem superior para separar a data de criação do conteúdo acima */
+    text-align: center; /* Centraliza a data de criação */
+}
+
+.FullPost__description {
+    margin-top: 20px; /* Margem superior para separar a descrição do conteúdo acima */
+    line-height: 1.6;
+    text-align: left; /* Alinha o texto da descrição à esquerda */
+}
+
+/* Remove a cor azul padrão e o sublinhado */
+a {
+    color: inherit; /* Faz com que o link use a cor do texto do elemento pai */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+/* Opcional: estilo para links ao passar o mouse */
+a:hover {
+    color: #007bff; /* Altere para a cor desejada ao passar o mouse */
+    text-decoration: underline; /* Opcional: adiciona sublinhado ao passar o mouse */
+}
+

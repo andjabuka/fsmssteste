@@ -1,0 +1,50 @@
+.container-ADD {
+    max-width: 600px; /* Largura máxima do formulário */
+    margin: 90px auto; /* Centraliza o formulário */
+}
+
+.form-group {
+    margin-bottom: 1.5rem; /* Espaçamento entre os campos */
+}
+
+.label {
+    font-weight: bold;
+    margin-bottom: 0.5rem; /* Espaçamento abaixo do rótulo */
+}
+
+.required {
+    color: red; /* Cor para o asterisco de campo obrigatório */
+}
+
+.btn-primary {
+    background-color: #006400; /* Cor do botão */
+    color: white; /* Texto branco */
+}
+
+.btn-primary:hover {
+    background-color: #006400; /* Cor ao passar o mouse */
+}
+
+.custom-btn {
+    width: 150px; /* Define a largura */
+    height: 50px; /* Define a altura */
+    padding: 10px 20px; /* Ajuste para controle do espaço interno */
+    border-radius: 5px; /* Bordas arredondadas, opcional */
+    display: inline-block; /* Garante que o botão não ocupe toda a largura */
+}
+
+
+.form-control {
+    border: 1px solid #ced4da; /* Borda leve */
+    border-radius: 0.25rem; /* Bordas arredondadas */
+}
+
+.form-control:focus {
+    border-color: #80bdff; /* Cor da borda ao focar */
+    box-shadow: 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra ao focar */
+}
+
+.form-control-sm {
+    font-size: 0.875rem; /* Tamanho da fonte menor */
+    padding: 0.25rem 0.5rem; /* Preenchimento menor */
+}

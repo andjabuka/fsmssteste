@@ -1,0 +1,83 @@
+
+/* Logo */
+.logo1-img {
+    font-weight: bold;
+    width: 250px;
+    color: #FF4500;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.dashboard {
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, #ffcc99, #ffffff);
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+}    
+
+.user-info {
+    font-size: 1rem;
+}
+
+.actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    color:#006400;
+}
+
+.actions .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    flex-grow: 1;  /* Faz os botões crescerem igualmente */
+    text-align: center; /* Centraliza o texto dos botões */
+    background-color: #006400; /* Cor do botão */
+    color: white; /* Texto branco */
+}
+
+.actions .btn-primary {
+    background-color: #006400;
+    color: white;
+    border: none;
+    
+}
+
+.actions .btn:hover {
+    background-color: #006400; /* Cor do botão */
+}
+
+.actions .btn-primary:hover {
+    background-color: #006400;
+    color: white;
+    border: none;
+    
+}
+
+@media (max-width: 400px) {
+    .actions {
+        display: block;
+        padding: 10px;
+    }
+}
+
+
+
+
+ 
+

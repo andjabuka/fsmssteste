@@ -1,0 +1,162 @@
+/* Estilo para o container principal da página de login */
+.container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura da viewport */
+    background-image: linear-gradient(to bottom, #ffcc99, #ffffff);
+}
+
+
+/* Estilo para a caixa de login */
+.box-login {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Largura máxima da caixa de login */
+    box-sizing: border-box; /* Inclui o padding na largura total */
+    color: #006400;
+    font-size: 18px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    position: relative;
+}
+
+.box-login p {
+    color: #FF8C00;
+    font-size: 32px;
+    font-weight: bold;
+
+}
+
+/* Estilo para o cabeçalho do formulário de login */
+.header-login {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo para o grupo de entradas de email */
+.input-group-email {
+    margin-bottom: 15px;
+}
+
+
+.login-img {
+    font-weight: bold;
+    width: 100%;
+    color: #FF4500;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-group-email label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group-email input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Inclui o padding na largura total */
+}
+
+/* Estilo para o grupo de entradas de senha */
+.input-group-login {
+    margin-bottom: 15px;
+  
+    
+}
+
+.input-group-login label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group-login input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Inclui o padding na largura total */
+}
+
+/* Estilo para a mensagem de erro */
+.error {
+    color: #dc3545; /* Cor de erro */
+    font-size: 0.9em;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Estilo para o botão de envio específico para login */
+.btn-login {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #8B0000;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #a30808;
+}
+
+
+.toggle-password-visibility {
+    background: none;
+    border: none; 
+    cursor: pointer;
+    position: absolute; 
+    right: 40px;
+    top: 77%;
+    transform: translateY(-50%); 
+    font-size: 1.2rem; 
+    color: #666; 
+    transition: color 0.3s ease; 
+  }
+  
+  .toggle-password-visibility:hover {
+    color: #000; 
+  }
+
+  @media (max-width: 768px)  {
+    .input-group-login {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .input-group-login input {
+      width: 100%;
+    }
+  
+    .toggle-password-visibility {
+      right: 50px;
+      font-size: 1.3rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .input-group-login input {
+      font-size: 0.9rem;
+      padding: 0.4rem;
+    }
+  
+    .toggle-password-visibility {
+      font-size: 0.9rem;
+    }
+  }
+
+  
+

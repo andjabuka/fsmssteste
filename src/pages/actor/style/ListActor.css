@@ -1,0 +1,89 @@
+body {
+    margin: 0; /* Remove margens padrão do corpo */
+    padding: 0; /* Remove preenchimento padrão do corpo */
+    box-sizing: border-box; /* Faz com que o padding e as bordas sejam incluídos no tamanho total dos elementos */
+}
+
+.edit-container {
+    display: flex;
+    flex-direction: column; /* Empilha verticalmente */
+    align-items: center; /* Centraliza horizontalmente (opcional) */
+    gap: 15px; 
+    margin: auto;
+    background-image: linear-gradient(to bottom, #ffcc99, #ffffff);
+}
+
+.card-container {
+    display: grid; /* Muda para grid layout */
+    grid-template-columns: repeat(4, 1fr); /* Define 4 colunas de largura igual */
+    gap: 20px; /* Espaço entre os cards */
+}
+
+.card {
+
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-height: 250px; /* Altura mínima para os cards */
+    display: flex; /* Permite controlar o layout interno */
+    flex-direction: column; /* Alinha itens em coluna */
+    justify-content: space-between; /* Distribui espaço entre itens */
+}
+
+.card-image2 {
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.card-name {
+    margin: 10px 0 5px 0;
+    font-size: 18px;
+}
+
+.card-biography {
+    font-size: 14px;
+    color: #666;
+}
+
+.mb-5 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    top: 25px; 
+}
+
+.container3 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    top: 150px; /* Ajuste a distância entre as divs conforme necessário */
+  }
+
+.btn3 {
+    background-color: #006400;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px; /* Espaço entre os botões */
+    cursor: pointer;
+}
+
+.btn-danger {
+    padding: 5px 10px; /* Ajusta o preenchimento */
+    font-size: 14px; /* Ajusta o tamanho da fonte */
+    border-radius: 5px; /* Arredonda os cantos */
+    height: 40px; /* Define uma altura fixa */
+    margin-top: 10px; /* Espaço consistente acima do botão */
+}
+
+ 

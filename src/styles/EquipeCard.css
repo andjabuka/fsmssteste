@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Press+Start+2P&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Press+Start+2P&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Press+Start+2P&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    padding: 20px;
+    
+  }
+  
+  .card {
+    width: 350px;
+    padding: 15px;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+  }
+
+  .image-container {
+    width: 320px; /* Aumente esse valor para expandir o contêiner */
+    height: 250px;
+    overflow: hidden;
+    border-radius: 5%; /* Mantém a imagem circular */
+}
+
+.image-container img {
+    width: 100%; /* Ajusta a imagem para ocupar toda a largura do contêiner */
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem preencha o contêiner sem distorção */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+
+ 
+  
+  .social-links a {
+    color: black;
+    margin: 0 8px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #0073b1; /* Exemplo de cor para o LinkedIn */
+  }
+
+  h1{
+    font-family: "Barlow Condensed", sans-serif;
+    display: flex;
+    font-size: 42px;
+    /*color: #006400; /* Um verde escuro */
+    /*color: #FF8C00; /* Laranja  */
+    color: #8B0000; /* Vermelho escuro */
+    /*color: #333333; /* Cinza escuro,*/
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+@media (max-width: 500px) {
+  .image-container img {
+    width: 100%; /* Ajusta a imagem para ocupar toda a largura do contêiner */
+    height: 100%;
+    transform: scale(0.8);
+    margin: 0 0  15px -25px;
+  }
+
+  
+}

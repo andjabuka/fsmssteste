@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Press+Start+2P&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Press+Start+2P&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Press+Start+2P&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.hero {
+    display: flex;
+    height: auto;
+}
+
+.text-content {
+    width: 40%;
+    height: auto;
+    background-color: #D6281E;
+    padding: 45px 50px;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.text-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+.text-content p {
+    font-size: 17px;
+    line-height: 1.5;
+    font-family: "Public Sans", sans-serif;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    flex: 1;
+}
+
+@media (max-width: 1291px) {
+    .hero {
+        position: relative;
+        display: block;
+    }
+
+    .carousel {
+        display: block;
+    }
+
+    .text-content {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .text-content h2 {
+        font-size: 22px;
+    }
+    
+    .text-content p {
+        font-size: 13px
+    }
+
+    .image-content {
+        width: 100%;
+    }
+
+    .carousel img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    
+    .text-content {
+        width: 100%;
+        order: 2;
+        padding: 20px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    .image-content {
+        width: 100%;
+        order: 1;
+        margin-bottom: -4px;
+    }
+    
+    .text-content h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .text-content p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    
+    .image-content img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}

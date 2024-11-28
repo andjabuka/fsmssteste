@@ -1,0 +1,20 @@
+.navbar {
+display: flex;
+justify-content: space-around; /* Alinha os botões horizontalmente */
+padding: 1rem;
+background-color: #f8f9fa; /* Cor de fundo da navbar */
+}
+
+.post__actions .btn-primary {
+background-color: #006400;; /* Cor do botão */
+color: white;
+border: none;
+padding: 0.5rem 1rem;
+border-radius: 5px;
+cursor: pointer;
+visibility: hidden;
+}
+
+.post__actions .btn-primary:hover {
+background-color: #006400;; /* Efeito hover */
+}
