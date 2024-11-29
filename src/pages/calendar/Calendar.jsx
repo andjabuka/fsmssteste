@@ -11,51 +11,27 @@ const Calendar = () => {
   const [apiKey, setApiKey] = useState('');
   const [calendarId, setCalendarId] = useState('');
 
-  // Função para buscar a API_KEY e CALENDAR_ID do backend
-  const fetchCalendarConfig = async () => {
-    try {
-      const response = await axios.get('http://localhost:8080/api/google/calendar');
-      const { API_KEY, CALENDAR_ID } = response.data;
-      setApiKey(API_KEY);
-      setCalendarId(CALENDAR_ID);
-    } catch (error) {
-      console.error('Erro ao buscar a configuração do calendário:', error);
-    }
-  };
-
-  useEffect(() => {
-    fetchCalendarConfig(); // Chama a função para buscar as chaves no backend
-  }, []);
+  
+  const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
+  const CALENDAR_ID = process.env.REACT_APP_GOOGLE_CALENDAR_ID;
 
   useEffect(() => {
     const fetchEvents = async () => {
-      if (!apiKey || !calendarId) {
-        console.error('Chave da API ou ID do calendário não definidos.');
-        return;
-      }
-
       try {
         const startOfDay = new Date(date);
         startOfDay.setHours(0, 0, 0, 0);
         const endOfDay = new Date(date);
         endOfDay.setHours(23, 59, 59, 999);
 
-        const response = await axios.get(
-          `https://www.googleapis.com/calendar/v3/calendars/${calendarId}/events`,
-          {
-            params: {
-              key: apiKey,
-              conferenceDataVersion: 1,
-              timeMin: startOfDay.toISOString(),
-              timeMax: endOfDay.toISOString(),
-            },
-          }
+        const response = await fetch(
+          `https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?key=${API_KEY}&conferenceDataVersion=1&timeMin=${startOfDay.toISOString()}&timeMax=${endOfDay.toISOString()}`
         );
+        const data = await response.json();
 
-        const sortedEvents = (response.data.items || []).sort((a, b) => {
+        const sortedEvents = (data.items || []).sort((a, b) => {
           const startA = new Date(a.start?.dateTime || a.start?.date);
           const startB = new Date(b.start?.dateTime || b.start?.date);
-          return startA - startB;
+          return startA - startB;  // Ordena por data
         });
 
         setEvents(sortedEvents);
@@ -65,12 +41,12 @@ const Calendar = () => {
     };
 
     fetchEvents();
-  }, [date, apiKey, calendarId]);
+  }, [date]);
 
   const formatDate = (dateTime) => {
     if (!dateTime) return 'Data não disponível';
     const date = new Date(dateTime);
-    return date.toLocaleString('pt-BR', { dateStyle: 'full', timeStyle: 'short' });
+    return date.toLocaleString();
   };
 
   const handleDateChange = (offset) => {
@@ -82,14 +58,13 @@ const Calendar = () => {
   };
 
   const openModal = (event) => {
-    setSelectedEvent(event);
-    setIsModalOpen(true);
+    setSelectedEvent(event);  // Define o evento selecionado
+    setIsModalOpen(true);  // Abre o modal
   };
 
   const closeModal = () => {
-    setIsModalOpen(false);
+    setIsModalOpen(false);  // Fecha o modal
   };
-
   return (
     <div className="container2">
       <h1>Eventos</h1>
